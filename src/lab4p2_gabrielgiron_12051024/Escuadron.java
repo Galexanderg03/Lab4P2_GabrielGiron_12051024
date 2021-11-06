@@ -5,6 +5,8 @@
  */
 package lab4p2_gabrielgiron_12051024;
 import java.util.ArrayList;
+import javax.swing.JOptionPane;
+import static lab4p2_gabrielgiron_12051024.Lab4P2_GabrielGiron_12051024.ListaEscuadrones;
 /**
  *
  * @author Galex
@@ -27,21 +29,21 @@ public class Escuadron
         this.Nombre = Nombre;
     }
 
-    public ArrayList<Zonas> getZonasConquistadas() {
-        return ZonasConquistadas;
+    public void getZonasConquistadas() {
+     for(Zonas zonas: ZonasConquistadas)
+       {
+            JOptionPane.showMessageDialog(null, zonas.toString());
+       }
     }
 
-    public void setZonasConquistadas(ArrayList<Zonas> ZonasConquistadas) {
-        this.ZonasConquistadas = ZonasConquistadas;
+    public void getListaSoldados() {
+        for(Soldados soldados: Soldados)
+        {
+            JOptionPane.showMessageDialog(null, soldados.toString());
+        }
     }
 
     public ArrayList<Soldados> getSoldados() {
         return Soldados;
     }
-
-    public void setSoldados(ArrayList<Soldados> Soldados) {
-        this.Soldados = Soldados;
-    }
-    
-    
-}
+   }

@@ -15,13 +15,14 @@ public class Soldados {
     private int TiempoServicio;
     private String Rango;
     private int vida;
+    private int DMG;
 
-    public Soldados(String Nombre, int Edad, int TiempoServicio, String Rango, int vida) {
+    public Soldados(String Nombre, int Edad, int TiempoServicio, String Rango, int vida, int DMG) {
         this.Nombre = Nombre;
         this.Edad = Edad;
         this.TiempoServicio = TiempoServicio;
         this.Rango = Rango;
-        this.vida = vida;
+        this.DMG = DMG;
     }
 
     public String getNombre() {
@@ -64,10 +65,21 @@ public class Soldados {
         this.vida = vida;
     }
 
+    public int getDMG() {
+        return DMG;
+    }
+
+    public void setDMG(int DMG) {
+        this.DMG = DMG;
+    }
+
+
     @Override
     public String toString() {
-        return "Soldados{" + "Nombre=" + Nombre + ", Edad=" + Edad + ", TiempoServicio=" + TiempoServicio + ", Rango=" + Rango + ", vida=" + vida + "]\n";
+        return "Soldados{" + "Nombre=" + Nombre + ", Edad=" + Edad + ", TiempoServicio=" + TiempoServicio + ", Rango=" + Rango + ", vida=" + vida + ", Clase=" + '}';
     }
+
+
     
     
 }

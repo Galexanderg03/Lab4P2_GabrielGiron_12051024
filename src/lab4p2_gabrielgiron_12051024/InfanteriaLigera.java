@@ -13,14 +13,18 @@ public class InfanteriaLigera extends Soldados{
     private String Arma = "Arma Blanca";
     private int ArmaDMG = 50;
 
-    public InfanteriaLigera(String Nombre, int Edad, int TiempoServicio, String Rango, int vida) {
-        super(Nombre, Edad, TiempoServicio, Rango, vida);
-    }
-
-    @Override
-    public String toString() {
-        return "InfanteriaLigera{" + "Arma=" + Arma + ", ArmaDMG=" + ArmaDMG + '}';
-    }
-
     
+    public InfanteriaLigera(String Nombre, int Edad, int TiempoServicio, String Rango, int vida, int DMG) {
+        super(Nombre, Edad, TiempoServicio, Rango, vida, DMG);
+        DMG = ArmaDMG;
+    }
+
+    public String getArma() {
+        return Arma;
+    }
+
+    public int getArmaDMG() {
+        return ArmaDMG;
+    }
+ 
 }

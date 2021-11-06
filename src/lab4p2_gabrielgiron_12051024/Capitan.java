@@ -9,12 +9,11 @@ package lab4p2_gabrielgiron_12051024;
  *
  * @author Galex
  */
-public class InfanteriaPesada extends Soldados
-{
-    private String Arma = "Bomba";
-    private int ArmaDMG = 150;
+public class Capitan extends Soldados{
+    private String Arma = "Lanzallamas";
+    private int ArmaDMG = 110;
 
-    public InfanteriaPesada(String Nombre, int Edad, int TiempoServicio, String Rango, int vida, int DMG) {
+    public Capitan(String Nombre, int Edad, int TiempoServicio, String Rango, int vida, int DMG) {
         super(Nombre, Edad, TiempoServicio, Rango, vida,DMG);
         DMG = ArmaDMG;
     }

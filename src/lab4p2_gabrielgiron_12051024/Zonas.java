@@ -57,7 +57,7 @@ public class Zonas {
 
     @Override
     public String toString() {
-        return "Zonas{" + "Nombre=" + Nombre + ", tama\u00f1o=" + tamaño + ", coordenadaX=" + coordenadaX + ", coordenadaY=" + coordenadaY + '}';
+        return "Zonas{" + "Nombre=" + Nombre + ", tama\u00f1o=" + tamaño + " Metros, coordenadaX=" + coordenadaX + ", coordenadaY=" + coordenadaY + '}';
     }
     
     
